@@ -15,7 +15,7 @@ Supports six UDA strategies:
   - DANN (Domain-Adversarial Neural Network) 
   - ADDA (Adversarial Discriminative Domain Adaptation)  
   - MCD (Maximum Classifier Discrepancy)  
-  - HHD (Hypothesis-based Hybrid Discrepancy)  
+  - HHD (Symmetric Difference Hypothesis Divergence)  
 
 # Installation
 
