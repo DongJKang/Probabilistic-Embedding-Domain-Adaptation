@@ -1,0 +1,26 @@
+model:
+  ckpt_path: ./logs/sourceonly/version_0/checkpoints/epoch=499-step=24000.ckpt
+  seq_len: 70
+  input_dim: 2
+  e_node: 48
+  hidden_dim: 20
+  c_node: 40
+  out_node: 4
+  d_node: 40
+  strategy: Gaussian
+  bias:
+    Gaussian: -1
+    Laplace: -1
+    Cauchy: -3
+
+train:
+  method: adda
+  num_epochs: 500
+  encoder_lr: 0.0000005
+  discriminator_lr: 0.0000005
+  dis_steps: 10
+  tgt_steps: 1
+  nu:
+    Gaussian: 0.001
+    Laplace: 0.001
+    Cauchy: 0.001

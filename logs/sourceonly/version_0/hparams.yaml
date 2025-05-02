@@ -1,0 +1,22 @@
+config:
+  model:
+    bias:
+      Cauchy: -3
+      Gaussian: -1
+      Laplace: -1
+    c_node: 40
+    e_node: 48
+    hidden_dim: 20
+    input_dim: 2
+    out_node: 4
+    seq_len: 70
+    strategy: Gaussian
+  train:
+    classifier_lr: 0.0001
+    encoder_lr: 0.0001
+    method: sourceonly
+    nu:
+      Cauchy: 0.001
+      Gaussian: 0.001
+      Laplace: 0.001
+    num_epochs: 500

@@ -1,0 +1,25 @@
+model:
+  seq_len: 70
+  input_dim: 2
+  e_node: 48
+  hidden_dim: 20
+  c_node: 40
+  out_node: 4
+  d_node: 40
+  strategy: Gaussian
+  bias:
+    Gaussian: -1
+    Laplace: -1
+    Cauchy: -3
+
+train:
+  method: dann
+  num_epochs: 500
+  encoder_lr: 0.0001
+  classifier_lr: 0.0001
+  discriminator_lr: 0.0001
+  lambda: 0.005
+  nu:
+    Gaussian: 0.001
+    Laplace: 0.001
+    Cauchy: 0.001
