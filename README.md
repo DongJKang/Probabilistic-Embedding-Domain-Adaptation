@@ -3,7 +3,7 @@ This repository provides a PyTorch implementation of a probabilistic embedding-b
 
 # Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
 
 ```bash
 git clone https://github.com/DongJKang/Probabilistic-Embedding-Domain-Adaptation.git
@@ -11,14 +11,14 @@ cd Probabilistic-Embedding-Domain-Adaptation
 
 ```
 
-2. Create a virtual environment (optional but recommended):
+2. **Create a virtual environment (optional but recommended)**:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ```
 
-3. Install depenedencies:
+3. **Install depenedencies**:
 ```bash
 pip install -r requirements.txt
 
@@ -26,16 +26,16 @@ pip install -r requirements.txt
 
 # Usage
 
-1. Configure the experiment:
+1. **Configure the experiment**:
 * Modify the configuration files in the `configs/` directory to set up your experiment parameters.
 
-2. Run training:
+2. **Run training**:
 ```bash
 python main.py --config configs/your_config.yaml
 
 ```
 
-3. Monitor training:
+3. **Monitor training**:
 * Training logs and checkpoints will be saved in the `logs/` directory.
 
 # Project Structure
