@@ -5,16 +5,16 @@ This repository provides a PyTorch implementation of a probabilistic embedding-b
 - **Probabilistic Embeddings**: 
 Utilizes probabilistic feature representations (e.g., Gaussian, Laplace, Cauchy) to model uncertainty and improve generalization under domain shift.
 
-- **PyTorch Lightning Integration**: 
+- **⚡ PyTorch Lightning Integration**: 
 Built on top of PyTorch Lightning for modular, scalable, and hardware-agnostic training workflows.
 
 - **Unsupervised Domain Adaptation (UDA)**: 
 Supports six UDA strategies:
   - CORAL (Correlation Alignment)
   - MMD (Maximum Mean Discrepancy)
-  - DANN (Domain-Adversarial Neural Network)  
-  - MCD (Maximum Classifier Discrepancy)  
+  - DANN (Domain-Adversarial Neural Network) 
   - ADDA (Adversarial Discriminative Domain Adaptation)  
+  - MCD (Maximum Classifier Discrepancy)  
   - HHD (Hypothesis-based Hybrid Discrepancy)  
 
 # Installation
