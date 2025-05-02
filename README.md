@@ -27,7 +27,7 @@ cd Probabilistic-Embedding-Domain-Adaptation
 
 ```
 
-2. **Create a virtual environment (optional but recommended)**:
+2. **Create a virtual environment** (optional but recommended):
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
