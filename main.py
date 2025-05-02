@@ -10,10 +10,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str, required=True, help='Path to config file')
 
-    # # Provide default config if not passed via CLI
-    # if len(sys.argv) == 1:
-    #     sys.argv += ['--config', 'configs/config_mcd.yaml']
-
     args = parser.parse_args()
 
     with open(args.config, 'r') as f:
