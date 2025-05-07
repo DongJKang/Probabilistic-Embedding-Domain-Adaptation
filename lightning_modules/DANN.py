@@ -71,7 +71,7 @@ class DANN(L.LightningModule):
         class_loss = self.class_criterion(class_output, src_class_label.float() if self.binary else src_class_label.long())
         domain_loss = self.domain_criterion(domain_output, src_and_tgt_domain_label)
 
-        loss = class_loss + lambda_p * self.config['train']['lambda'] * domain_loss
+        loss = class_loss - lambda_p * self.config['train']['lambda'] * domain_loss
 
         if self.probabilistic:
             loss += self.config['train']['nu'][self.config['model']['strategy']] * (
